@@ -1,0 +1,7 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Backup
+metadata:
+  name: developer-backup
+spec:
+  cluster:
+    name: demo-cluster

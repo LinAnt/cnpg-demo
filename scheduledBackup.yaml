@@ -1,0 +1,14 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: demo-backup-schedule
+spec:
+  cluster:
+    name: demo-cluster
+  immediate: true
+  schedule: "0 0 * * * *"    # Take a backup every hour
+  backupOwnerReference: self # Who owns the backup object
+                             # Can also be cluster or none
+                             # Deleting a backup object does not
+                             # delete files in the object store
+

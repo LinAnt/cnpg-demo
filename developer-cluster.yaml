@@ -1,0 +1,39 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: developer-cluster
+spec:
+  instances: 1
+
+  bootstrap:
+    recovery:
+      source: developer-backup
+
+  storage:
+    pvcTemplate:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 30Gi
+      storageClassName: longhorn
+      volumeMode: Filesystem
+
+  externalClusters:
+  - name: developer-backup
+    barmanObjectStore:
+      serverName: demo-cluster
+      destinationPath: "s3://backups/"
+      endpointURL: "http://demo-minio.cnpg-demo.svc.cluster.local:9000"
+      s3Credentials:
+        accessKeyId:
+          name: demo-minio
+          key: rootUser
+        secretAccessKey:
+          name: demo-minio
+          key: rootPassword
+      data:
+        compression: gzip
+      wal:
+        compression: gzip
+        maxParallel: 8

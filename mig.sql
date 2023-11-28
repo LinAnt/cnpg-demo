@@ -1,0 +1,55 @@
+CREATE TABLE tools (
+	id serial PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+INSERT INTO tools(id, name) VALUES (1, 'Hyper-Hammer');
+INSERT INTO tools(id, name) VALUES (2, 'Fusion-File');
+INSERT INTO tools(id, name) VALUES (3, 'Nano-Nailer');
+INSERT INTO tools(id, name) VALUES (4, 'Gravity-Grinder');
+INSERT INTO tools(id, name) VALUES (5, 'Quantum-Quasar');
+INSERT INTO tools(id, name) VALUES (6, 'Plasma-Pulverizer');
+INSERT INTO tools(id, name) VALUES (7, 'Ion-Infuser');
+INSERT INTO tools(id, name) VALUES (8, 'Laser-Leveller');
+INSERT INTO tools(id, name) VALUES (9, 'Neutron-Nibbler');
+INSERT INTO tools(id, name) VALUES (10, 'Vortex-Vise');
+INSERT INTO tools(id, name) VALUES (11, 'Plasma-Processor');
+INSERT INTO tools(id, name) VALUES (12, 'Quasar-Quickfix');
+INSERT INTO tools(id, name) VALUES (13, 'Nebula-Nipper');
+INSERT INTO tools(id, name) VALUES (14, 'Ion-Injector');
+INSERT INTO tools(id, name) VALUES (15, 'Galactic-Grinder');
+INSERT INTO tools(id, name) VALUES (16, 'Quantum-Quencher');
+INSERT INTO tools(id, name) VALUES (17, 'Fission-Filer');
+INSERT INTO tools(id, name) VALUES (18, 'Astro-Assembler');
+INSERT INTO tools(id, name) VALUES (19, 'Photon-Plucker');
+INSERT INTO tools(id, name) VALUES (20, 'Gravity-Gripper');
+INSERT INTO tools(id, name) VALUES (21, 'Starlight-Splicer');
+INSERT INTO tools(id, name) VALUES (22, 'Magnetic-Melder');
+INSERT INTO tools(id, name) VALUES (23, 'Saturn-Shaper');
+INSERT INTO tools(id, name) VALUES (24, 'Cosmic-Cutter');
+INSERT INTO tools(id, name) VALUES (25, 'Uranium-Unhinger');
+INSERT INTO tools(id, name) VALUES (26, 'Nova-Nudger');
+INSERT INTO tools(id, name) VALUES (27, 'Black-Hole-Builder');
+INSERT INTO tools(id, name) VALUES (28, 'Supernova-Slicer');
+INSERT INTO tools(id, name) VALUES (29, 'Stellar-Sculptor');
+INSERT INTO tools(id, name) VALUES (30, 'Comet-Crafter');
+INSERT INTO tools(id, name) VALUES (31, 'Dark-Matter-Dicer');
+INSERT INTO tools(id, name) VALUES (32, 'Solar-Smasher');
+INSERT INTO tools(id, name) VALUES (33, 'Pluto-Plunger');
+INSERT INTO tools(id, name) VALUES (34, 'Meteor-Mangler');
+INSERT INTO tools(id, name) VALUES (35, 'Orbit-Oscillator');
+INSERT INTO tools(id, name) VALUES (36, 'Galaxy-Gouger');
+INSERT INTO tools(id, name) VALUES (37, 'Nuclear-Nipper');
+INSERT INTO tools(id, name) VALUES (38, 'Warp-Weaver');
+INSERT INTO tools(id, name) VALUES (39, 'Interstellar-Inverter');
+INSERT INTO tools(id, name) VALUES (40, 'Cosmic-Carver');
+INSERT INTO tools(id, name) VALUES (41, 'Neptune-Nudger');
+INSERT INTO tools(id, name) VALUES (42, 'Pulsar-Profiler');
+INSERT INTO tools(id, name) VALUES (43, 'Lunar-Liberator');
+INSERT INTO tools(id, name) VALUES (44, 'Satellite-Sculptor');
+INSERT INTO tools(id, name) VALUES (45, 'Asteroid-Assembler');
+INSERT INTO tools(id, name) VALUES (46, 'Pluto-Processor');
+INSERT INTO tools(id, name) VALUES (47, 'Quasar-Queller');
+INSERT INTO tools(id, name) VALUES (48, 'Starlight-Sander');
+INSERT INTO tools(id, name) VALUES (49, 'Astro-Alterer');
+INSERT INTO tools(id, name) VALUES (50, 'Comet-Crusher');
